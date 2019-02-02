@@ -73,7 +73,7 @@ client.on('message', async message => {
 
 .setImage("https://d.top4top.net/p_10880lo1r1.png")
 
- if (command == "ban") {
+ if (command == "-ban") {
 
  if(!message.channel.guild) return message.reply('** This command only for servers**');
          
@@ -165,7 +165,7 @@ client.on('message', message => {
  
  .setImage("https://c.top4top.net/p_108825enp1.png")
  
-  if (command == "mute") {
+  if (command == "-mute") {
     
   if(!muteRole) return message.guild.createRole({ name: "Muted", permissions: [] });
 
@@ -342,6 +342,5 @@ var duration = (upgradeTime * 1000)
 });
 
 
-client.login(process.env.BOT_TOKEN);
 
 client.login(process.env.BOT_TOKEN);
